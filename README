@@ -1,0 +1,12 @@
+An example of importing playlists into Rdio.
+
+First run authenticate.py to authenticate against the Rdio service.
+
+Then you can run either hypempopular.py or we-are-hunted.py to try importing 
+Hype Machine's popular tracks or the current We Are Hunted popular tracks.
+
+Both of these use the code in playlistcreator.py to match artist and track
+names against Rdio's catalog. The matching is fuzzy, using Levenshtein 
+edit distance and simple transforms to find inexact matches.
+
+This uses the Rdio Python library from: https://github.com/rdio/rdio-python
